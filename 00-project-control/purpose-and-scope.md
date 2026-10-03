@@ -3,7 +3,7 @@
 Status: Aligned draft  
 Owner: José Andrade  
 Current stage: Discover → Define  
-Last updated: 29 July 2026
+Last updated: 4 October 2026
 
 ## Purpose
 
@@ -23,6 +23,40 @@ The workstream provides a structured way to:
 The repository supports decision-making and transformation activity.
 
 It is not an operational system of record, customer-data repository, approved policy library or replacement for organisational delivery tools.
+
+## Strategic direction — first proving ground
+
+Following the 30 September 2026 discussion, Customer Account Management should be treated as the **first proving ground for a business-led Customer Data Architecture**.
+
+This changes the strategic emphasis without changing the evidence discipline of the workstream.
+
+The work is not only about improving the quality of records already held in CRM. It should help define and test what customer context the business actually needs in order to deliver more connected, lower-effort experiences across services.
+
+Use this workstream to explore, in a bounded and explainable way:
+
+- what constitutes useful and sufficiently trusted customer context;
+- how account records relate to the wider customer relationship;
+- which legitimate account distinctions must be preserved;
+- where fragmented information creates customer or staff effort;
+- what stewardship questions belong with CX / business owners;
+- what authorised system changes remain with source-system administrators;
+- what review and verification loops are needed; and
+- what evidence would justify broader architecture or technology investment.
+
+Customer Account Management is **not** the complete Customer Data Architecture.
+
+It is the first practical test through which the wider architecture can be shaped from real business problems.
+
+The current direction does not assume:
+
+- automatic merges;
+- unrestricted writeback;
+- a comprehensive unified customer profile;
+- a new master customer identifier;
+- a particular customer-data platform; or
+- Salesforce Data 360 or another technology as the predetermined answer.
+
+Technology choices should follow validated business requirements and demonstrated value.
 
 ## Initial objective
 
