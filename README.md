@@ -78,7 +78,11 @@ A Business Context Framework that explains:
 
 It means using the framework to identify opportunities to create a better experience, then putting those experience hypotheses into the real world.
 
-Depending on the opportunity, this may use:
+Candidate and active opportunities live only in:
+
+`02-deliver/experiment-register.md`
+
+Depending on the opportunity, testing may use:
 
 - A/B tests;
 - controlled comparisons;
@@ -130,7 +134,6 @@ README.md
 01-develop/
   architecture-v0.1.md
   war-room-operating-model.md
-  test-cases.md
 
 02-deliver/
   experiment-register.md
@@ -145,4 +148,4 @@ references/
 
 ## Current next step
 
-Convene the first war-room working session, define Business Context Framework v0.1, then identify the first experience opportunity where the framework can be applied and compared against today's experience.
+Convene the first war-room working session, define Business Context Framework v0.1, then select the first candidate in the experiment register to move into a real-world test.
