@@ -1,22 +1,29 @@
-# 4D Experiment Register
+# 4D Experience Experiment Register
 
-**Purpose:** Track the smallest shipped tests of the Business Context Architecture.
+**Purpose:** Track real-world tests generated from the Business Context Framework.
 
-| ID | Experiment | What it tests | Status | Evidence / result | Decision |
-|---|---|---|---|---|---|
-| BCA-EXP-001 | Customer account / duplicate scenario | Customer context, relationships, trust, stewardship | Planned | — | — |
-| BCA-EXP-002 | Parking Service Offering ↔ Knowledge | Service and information context, reuse, gaps, ownership | Planned | — | — |
-| BCA-EXP-003 | Operational change outside CRM | Operational change, service impact, awareness, reuse | Planned | — | — |
+| ID | Opportunity | Experience hypothesis | Test approach | Status | Result | Framework implication |
+|---|---|---|---|---|---|---|
+| BCA-EXP-001 | Customer account / duplicate context | Richer context improves staff account decisions | Prototype / controlled comparison | Candidate | — | — |
+| BCA-EXP-002 | Parking Service Offering ↔ Knowledge | Context-led information reduces search and interpretation | A/B or controlled comparison | Candidate | — | — |
+| BCA-EXP-003 | Operational change | Connected operational context improves timeliness and consistency | Pilot / controlled comparison | Candidate | — | — |
 
 ## Experiment pattern
 
-For each test capture only:
+For each experiment capture:
 
-1. **Scenario** — what happened?
-2. **Context needed** — what did we need to know?
-3. **Model fit** — what did v0.1 explain well or poorly?
-4. **Gap** — what relationship/object was missing or unnecessary?
-5. **Decision** — keep, change, remove or investigate.
-6. **Evidence** — link back to the source.
+1. **Opportunity** — what experience are we trying to improve?
+2. **Hypothesis** — what do we believe the framework makes possible?
+3. **Control/current experience** — what happens today?
+4. **Treatment/prototype** — what changes when Business Context is applied?
+5. **Measure** — what observable difference matters?
+6. **Result** — what happened?
+7. **Framework implication** — what should we keep, change or remove?
 
-The aim is to improve the model, not produce a large test report.
+## Delivery principle
+
+4D is where the framework earns credibility.
+
+A positive result strengthens the model.
+
+A negative or ambiguous result is equally useful if it exposes a weak assumption, unnecessary concept or missing relationship.
