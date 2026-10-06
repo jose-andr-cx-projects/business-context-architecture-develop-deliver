@@ -132,7 +132,7 @@ These layers are a starting framework, not a final enterprise architecture.
 README.md
 
 01-develop/
-  architecture-v0.1.md
+  starting-framework.md
   war-room-operating-model.md
 
 02-deliver/
@@ -148,4 +148,4 @@ references/
 
 ## Current next step
 
-Convene the first war-room working session, define Business Context Framework v0.1, then select the first candidate in the experiment register to move into a real-world test.
+Convene the first war-room working session, refine the Starting Framework, then select the first candidate in the experiment register to move into a real-world test.
