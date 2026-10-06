@@ -1,158 +1,129 @@
-# Business Context Architecture — Customer Account Management repository
+# Business Context Architecture — Develop + Deliver
 
-**Status:** Active — 3D Design  
-**Owner:** José Andrade  
-**4D position:** 1D Discover complete enough for progression; 2D Define complete enough for progression; 3D active; 4D first shipping next.
+**Status:** Active  
+**4D stage:** 3D Develop + 4D Deliver  
+**Owner:** José Andrade
 
 ## Purpose
 
-This repository now carries the 4D progression from the original Customer Account Management work into the **Business Context Architecture**.
+This repository is the active working space for the **Business Context Architecture**.
 
-The 4D method remains the organising logic:
+It starts where the completed Discover + Define work ends.
 
-1. **1D — Discover:** understand current state, evidence and context;
-2. **2D — Define:** frame the problem and define the How Might We;
-3. **3D — Design:** answer the How Might We through the Business Context Architecture;
-4. **4D — Deliver:** ship the smallest useful version of the model and test it through real use.
+The upstream evidence and problem framing live in:
 
-The repository preserves the Customer Account Management discovery and definition history. From 3D onward, the active design scope is broader: **Customer Account Management and Information Management become two problem streams inside one Business Context Architecture.**
+`jose-andr-cx-projects/customer-accounts-and-information-management-discover-define`
 
-## 1D + 2D — what got us here
+This repository does **not** repeat that discovery.
 
-### Customer Account Management
+Its job is simple:
 
-The work established a practical problem frame around:
+> **Develop the smallest useful business-context model, ship it through bounded tests, learn, and refine.**
 
-- fragmented customer and account context;
-- duplicate and inconsistent records;
-- legitimate account and relationship distinctions;
-- data-quality signals versus confirmed identity;
-- unclear stewardship and decision rights;
-- manual correction and verification;
-- the need to define trusted customer context before selecting technology.
-
-Customer Account Management asks:
-
-> What context do we need to understand the customer and their relationship with the City?
-
-### Information Management
-
-Current-state SOP work and operational knowledge identified a related information problem:
-
-- information management has historically been shaped around an internally focused Contact Centre model;
-- Salesforce Knowledge largely reflects this model, with manually refined guidance focused on how phone agents handle enquiries;
-- rich service and knowledge information exists inside CRM but is fragmented and weakly connected to customer, service and operational context;
-- a large amount of customer-relevant information exists outside CRM;
-- CX often relies on service areas recognising that something has changed and manually telling the Contact Centre or Customer Experience;
-- service-to-knowledge relationships are uneven and not yet governed as a reusable business relationship.
-
-Information Management asks:
-
-> What context do we need to understand the service, what is currently true, and what has changed?
-
-The detailed current-state evidence remains in:
-
-`jose-andr-cx-projects/cx-current-state-sop-mapping`
-
-## 3D — Business Context Architecture
-
-### Design question
+## Design question
 
 > **What business context is needed to understand the customer, the service and the situation well enough to support the right interaction?**
 
-### Working model
+## Working architecture
 
 ```text
-CUSTOMER CONTEXT
-Who are they and what relationship do we have?
-        ↕
-SERVICE CONTEXT
-What service or Service Offering are they dealing with?
-        ↕
-INFORMATION CONTEXT
-What rules, requirements and guidance are relevant?
-        ↕
-OPERATIONAL CONTEXT
-What is happening or has changed?
-        ↕
-INTERACTION CONTEXT
-What are they trying to do, through which Mode and channel?
-        ↕
-OUTCOME CONTEXT
-What happened and what can we learn?
+Customer Context
+      ↕
+Service Context
+      ↕
+Information Context
+      ↕
+Operational Context
+      ↕
+Interaction Context
+      ↕
+Outcome Context
 ```
 
-The model should connect business meaning without assuming one platform, one master profile or one enterprise technology solution.
+### Customer Context
+Who are they and what relationship do we have?
 
-### Two design lenses, one architecture
+### Service Context
+What service or Service Offering are they dealing with?
 
-**Customer Account Management lens**
+### Information Context
+What rules, requirements and guidance are relevant?
 
-Test whether the model makes customer identity, relationships, account distinctions, trust and stewardship easier to understand and manage.
+### Operational Context
+What is happening or what has changed?
 
-**Information Management lens**
+### Interaction Context
+What are they trying to do, through which Mode and channel?
 
-Test whether the model makes service information, knowledge, operational change, ownership, lifecycle and reuse easier to understand and manage.
+### Outcome Context
+What happened and what can we learn?
 
-Neither lens is a separate project from 3D onward.
+## Two lenses, one architecture
 
-## Business ownership principle
+**Customer Accounts** tests whether the model helps us understand identity, relationships, account distinctions, trust and stewardship.
 
-The work begins with business meaning and customer/service outcomes.
+**Information Management** tests whether the model helps us understand service meaning, knowledge, operational change, ownership, lifecycle and reuse.
 
-CX and business owners should be able to define:
+These are not separate projects.
 
-- the context needed;
-- the relationships that matter;
-- trust requirements;
-- business rules;
-- stewardship questions;
-- lifecycle expectations;
-- success measures.
+## 3D — Develop
 
-Technology and data architecture enable that model through platforms, integration, authorised access and implementation.
+The immediate output is **Business Context Architecture v0.1**:
 
-The architecture should not depend on final enterprise technical architecture before useful business-context design can begin.
+- minimum business objects;
+- minimum relationships between them;
+- where trust or ownership matters;
+- what remains uncertain;
+- enough structure to test against real scenarios.
 
-## 4D — first shipping
+The model should stay business-led and technology-neutral.
 
-4D is not a full enterprise implementation.
+## 4D — Deliver
 
-It is the first bounded shipping of the model to test whether it improves real decisions.
+We will ship the model through three bounded tests:
 
-Initial test set:
+1. **Customer account / duplicate scenario**  
+   Tests customer context, identity uncertainty, relationships and stewardship.
 
-1. **Customer account / duplicate scenario** — tests customer context, identity uncertainty, relationship distinctions and stewardship.
-2. **Parking Service Offering ↔ Knowledge relationship** — tests service and information context, reuse, coverage and ownership.
-3. **Operational-change scenario** — tests whether a change outside CRM can be related to the relevant service, interaction and customer context without relying solely on manual awareness.
+2. **Parking Service Offering ↔ Knowledge scenario**  
+   Tests service context, knowledge relationships, reuse, gaps and ownership.
 
-The aim is to learn whether the model is useful before expanding architecture or technology.
+3. **Operational-change scenario**  
+   Tests how a change outside CRM becomes relevant to a service, customer interaction and channel response.
 
-## Repository boundary
+## Principles
 
-This repository contains:
+- Business meaning before technology.
+- Relationships before catalogues.
+- Context before integration.
+- Trust and uncertainty must be visible.
+- Operational change is context, not just communication.
+- Knowledge articles are representations of business context, not the context itself.
+- Human review remains where identity, ownership or meaning is uncertain.
+- Add complexity only when a real test requires it.
 
-- the original Customer Account Management 1D and 2D evidence and decisions;
-- the active 3D Business Context Architecture design;
-- the active 4D tests and learning.
+## Repository structure
 
-It does not replace:
+```text
+README.md
 
-- organisational systems of record;
-- current-state SOP evidence;
-- Salesforce, Databricks or other operational platforms;
-- enterprise architecture governance;
-- approved policy or data governance.
+01-develop/
+  architecture-v0.1.md
+  test-cases.md
 
-## Navigation
+02-deliver/
+  experiment-register.md
+  learning-log.md
 
-- `01-discover/` — Customer Account Management discovery evidence.
-- `02-define/` — Customer Account Management problem definition and rule refinement.
-- `03-design/` — active Business Context Architecture design.
-- `04-deliver/` — bounded 4D tests and first shipping.
-- `05-evaluation-and-learning/` — learning from tests.
-- `06-decisions/` — material project and architecture decisions.
+03-decisions/
+  decision-log.md
+
+references/
+  discover-define-handoff.md
+```
+
+That is intentionally the whole structure.
 
 ## Current next step
 
-Develop Business Context Architecture v0.1 around the six context layers and test it against the three initial use cases before adding further structure.
+Define the minimum business objects and relationships for v0.1, then pressure-test them against the three scenarios.
