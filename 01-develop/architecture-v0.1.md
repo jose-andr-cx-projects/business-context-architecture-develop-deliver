@@ -1,81 +1,91 @@
-# Business Context Architecture v0.1
+# Business Context Framework v0.1
 
-**Status:** Working model  
+**Status:** Working framework  
 **Stage:** 3D — Develop
 
-## Design question
+## Intent
 
-> What business context is needed to understand the customer, the service and the situation well enough to support the right interaction?
+v0.1 is a **top-down business framework for what good should look like**.
 
-## Context layers
+It is not derived by reproducing current systems or processes.
 
-| Layer | Core question | Candidate business objects |
-|---|---|---|
-| Customer Context | Who are they and what relationship do we have? | Customer, Account, Relationship, Segment |
-| Service Context | What are they dealing with? | Service, Service Offering |
-| Information Context | What is relevant and true? | Rule, Requirement, Guidance, Knowledge |
-| Operational Context | What is happening or changing? | Event, Status, Change |
-| Interaction Context | What are they trying to do? | Intent, Interaction Mode, Channel, Interaction |
-| Outcome Context | What happened? | Outcome, Experience Evidence |
+Instead, it defines the minimum context that should be available to support a good customer interaction, then allows today's data, systems, processes and knowledge to be mapped into that model.
 
-These are candidate objects, not a final data model.
+## Core design question
 
-## Working relationship model
+> **What business context is needed to understand the customer, the service and the situation well enough to support the right interaction?**
 
-```text
-Customer
-  ↕
-Account / Relationship
-  ↕
-Service / Service Offering
-  ↕
-Rule / Requirement / Knowledge
-  ↕
-Operational Event / Status
-  ↕
-Interaction Mode / Channel / Intent
-  ↕
-Outcome / Experience Evidence
-```
+## Starting framework
 
-The architecture should make the relationships visible without requiring every concept to live in one system.
+| Context | Question |
+|---|---|
+| Customer Context | Who are they and what relationship do we have? |
+| Service Context | What service or Service Offering are they dealing with? |
+| Information Context | What rules, requirements and guidance are relevant? |
+| Operational Context | What is happening or what has changed? |
+| Interaction Context | What are they trying to do, through which Mode and channel? |
+| Outcome Context | What happened and what can we learn? |
+
+## Candidate concepts
+
+These concepts help populate the framework. They are not yet a final ontology or data model.
+
+| Context | Candidate concepts |
+|---|---|
+| Customer | Customer, Account, Relationship, Segment |
+| Service | Service, Service Offering |
+| Information | Rule, Requirement, Guidance, Knowledge |
+| Operational | Event, Status, Change |
+| Interaction | Intent, Interaction Mode, Channel, Interaction |
+| Outcome | Outcome, Experience Evidence |
 
 ## Cross-cutting properties
 
-The following are not separate layers. They apply where relevant:
+Where relevant, context may also need:
 
 - owner;
-- source;
+- authoritative source;
 - trust / confidence;
 - lifecycle state;
 - effective date;
 - review or expiry;
-- permissions / authority;
+- authority / permission;
 - evidence;
 - exception status.
 
-## Design tests
+## Top-down rule
 
-A proposed object or relationship should earn its place by helping answer at least one real question such as:
+The framework should be able to host current reality without being shaped around current limitations.
 
-- Which customer relationship matters for this service?
-- Which Service Offering is affected?
-- What rule or requirement is relevant?
-- What changed operationally?
-- Which interactions or channels are affected?
-- Who owns the meaning?
-- Can this context be trusted for this use?
-- What outcome should be observed?
+For example:
 
-## Boundary
+- Salesforce objects may map into the framework, but Salesforce does not define the business concepts.
+- Knowledge articles may represent business context, but the article itself is not the context.
+- Current service processes may reveal necessary relationships, but today's process sequence is not automatically the desired model.
+- Integration constraints are implementation considerations, not reasons to omit needed business context.
 
-v0.1 is a **business model**, not:
+## What good looks like
 
-- a Salesforce schema;
-- a Databricks model;
-- an integration design;
-- a master-data model;
-- an enterprise ontology;
-- a procurement recommendation.
+A useful framework should make it easier to answer:
 
-Technology follows the validated relationships.
+- What do we need to know about this customer?
+- What relationship or account distinction matters here?
+- Which Service Offering is involved?
+- What is currently true about that service?
+- Has something changed operationally?
+- What information applies to this customer and situation?
+- What is the customer trying to achieve?
+- Through which interaction mode are they doing it?
+- What experience should result?
+- What evidence would tell us whether it was better?
+
+## Success test for 3D
+
+3D is sufficiently developed when the framework can:
+
+1. host the useful context we already have;
+2. expose important context that is missing or disconnected today;
+3. generate at least one credible experience hypothesis;
+4. do so without relying on a predetermined technology solution.
+
+The next proof happens in 4D, not in another round of theoretical refinement.
