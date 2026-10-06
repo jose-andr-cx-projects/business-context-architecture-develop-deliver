@@ -8,23 +8,92 @@
 
 This repository is the active working space for the **Business Context Architecture**.
 
-It starts where the completed Discover + Define work ends.
-
-The upstream evidence and problem framing live in:
+Discover + Define has already given us enough evidence to move forward. The upstream work lives in:
 
 `jose-andr-cx-projects/customer-accounts-and-information-management-discover-define`
 
-This repository does **not** repeat that discovery.
+We are not waiting for organisation-wide agreement on the future model before designing it.
 
-Its job is simple:
+The approach is:
 
-> **Develop the smallest useful business-context model, ship it through bounded tests, learn, and refine.**
+> **Build a strong business-context framework in a protected expert space, then earn confidence by using it to create and test better experiences in the real world.**
 
-## Design question
+## The shift
 
-> **What business context is needed to understand the customer, the service and the situation well enough to support the right interaction?**
+The previous pattern would be to keep discovering, socialising and seeking broader agreement before defining the model.
 
-## Working architecture
+This project takes a more direct approach:
+
+```text
+WHAT WE ALREADY KNOW
+Customer + service context is fragmented
+        ↓
+3D — DEVELOP
+Define what good should look like
+in a protected expert "war-room"
+        ↓
+BUSINESS CONTEXT FRAMEWORK
+A coherent model that can host today's reality
+without being constrained by it
+        ↓
+4D — DELIVER
+Apply the framework to real opportunities
+        ↓
+EXPERIENCE TESTS
+A/B tests or controlled comparisons
+        ↓
+EVIDENCE
+What improved? What failed?
+        ↓
+REFINE THE FRAMEWORK
+```
+
+The framework does not need to win an argument before it can be tested.
+
+It needs to be coherent enough to generate better experience hypotheses and open enough for evidence to challenge it.
+
+## 3D — Develop
+
+3D is a **top-down framework-building exercise**.
+
+A small selected group brings together CX, service, data, digital and operational expertise to define the business context good service needs.
+
+The group should be sufficiently protected from inherited system boundaries, current process logic and "this is how we do it today" thinking to explore a better model.
+
+The framework should still be able to host current reality — but current reality should not define the framework.
+
+### 3D output
+
+A Business Context Framework that explains:
+
+- the context a customer interaction may need;
+- the main business concepts and relationships;
+- where trust, ownership and lifecycle matter;
+- how current systems and information can map into the model;
+- what experience opportunities the model makes possible.
+
+## 4D — Deliver
+
+4D does **not** mean implementing the architecture organisation-wide.
+
+It means using the framework to identify opportunities to create a better experience, then putting those experience hypotheses into the real world.
+
+Depending on the opportunity, this may use:
+
+- A/B tests;
+- controlled comparisons;
+- prototypes;
+- small pilots;
+- side-by-side staff tests;
+- limited-service experiments.
+
+The question is:
+
+> **Does using richer, better-connected business context create a measurably better customer or staff experience?**
+
+The results feed back into the framework.
+
+## Working context framework
 
 ```text
 Customer Context
@@ -40,67 +109,18 @@ Interaction Context
 Outcome Context
 ```
 
-### Customer Context
-Who are they and what relationship do we have?
+These layers are a starting framework, not a final enterprise architecture.
 
-### Service Context
-What service or Service Offering are they dealing with?
+## Operating principles
 
-### Information Context
-What rules, requirements and guidance are relevant?
-
-### Operational Context
-What is happening or what has changed?
-
-### Interaction Context
-What are they trying to do, through which Mode and channel?
-
-### Outcome Context
-What happened and what can we learn?
-
-## Two lenses, one architecture
-
-**Customer Accounts** tests whether the model helps us understand identity, relationships, account distinctions, trust and stewardship.
-
-**Information Management** tests whether the model helps us understand service meaning, knowledge, operational change, ownership, lifecycle and reuse.
-
-These are not separate projects.
-
-## 3D — Develop
-
-The immediate output is **Business Context Architecture v0.1**:
-
-- minimum business objects;
-- minimum relationships between them;
-- where trust or ownership matters;
-- what remains uncertain;
-- enough structure to test against real scenarios.
-
-The model should stay business-led and technology-neutral.
-
-## 4D — Deliver
-
-We will ship the model through three bounded tests:
-
-1. **Customer account / duplicate scenario**  
-   Tests customer context, identity uncertainty, relationships and stewardship.
-
-2. **Parking Service Offering ↔ Knowledge scenario**  
-   Tests service context, knowledge relationships, reuse, gaps and ownership.
-
-3. **Operational-change scenario**  
-   Tests how a change outside CRM becomes relevant to a service, customer interaction and channel response.
-
-## Principles
-
-- Business meaning before technology.
-- Relationships before catalogues.
-- Context before integration.
-- Trust and uncertainty must be visible.
-- Operational change is context, not just communication.
-- Knowledge articles are representations of business context, not the context itself.
-- Human review remains where identity, ownership or meaning is uncertain.
-- Add complexity only when a real test requires it.
+- **Principle-led, not consensus-led.**
+- **Evidence can overturn the model.**
+- **Current systems inform the framework but do not define it.**
+- **Current process is evidence, not a design constraint.**
+- **Business meaning comes before integration.**
+- **The framework must create testable experience opportunities.**
+- **Nothing becomes a standard just because the war-room designed it.**
+- **The model earns adoption by surviving real-world use.**
 
 ## Repository structure
 
@@ -109,6 +129,7 @@ README.md
 
 01-develop/
   architecture-v0.1.md
+  war-room-operating-model.md
   test-cases.md
 
 02-deliver/
@@ -122,8 +143,6 @@ references/
   discover-define-handoff.md
 ```
 
-That is intentionally the whole structure.
-
 ## Current next step
 
-Define the minimum business objects and relationships for v0.1, then pressure-test them against the three scenarios.
+Convene the first war-room working session, define Business Context Framework v0.1, then identify the first experience opportunity where the framework can be applied and compared against today's experience.
