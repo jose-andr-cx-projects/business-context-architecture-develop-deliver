@@ -1,14 +1,22 @@
 # Learning Log
 
-Record learning from 4D tests using:
+4D learning feeds directly back into 3D.
 
-**Evidence → interpretation → change to model → decision**
+Use:
 
-| Date | Test | Evidence | What we learned | Model change | Decision |
+**Framework assumption → experience hypothesis → test → evidence → framework change**
+
+| Date | Experiment | Framework assumption | Evidence | What changed | Decision |
 |---|---|---|---|---|---|
 
-## Promotion rule
+## Learning rules
 
-Do not promote a concept into the architecture because it sounds useful.
+- Evidence can overturn a war-room decision.
+- Do not protect the framework because effort has already been invested in it.
+- Do not generalise from one test without considering context.
+- Promote patterns only when they prove useful beyond the original scenario.
+- Capture where current systems prevented a test separately from whether the business model itself was useful.
 
-Promote it when a real scenario demonstrates that the concept or relationship materially improves understanding or decision-making.
+## Adoption principle
+
+The framework should earn broader adoption through demonstrated usefulness, not through consensus before testing.
