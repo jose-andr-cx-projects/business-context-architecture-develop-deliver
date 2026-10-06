@@ -1,80 +1,65 @@
-# 3D Test Cases
+# Experience Opportunity Candidates
 
-The architecture is developed through real scenarios rather than abstract completeness.
+**Stage:** Bridge from 3D Develop to 4D Deliver
 
-## Test 1 — Customer account / duplicate context
+These are not architecture-validation exercises for their own sake.
 
-### Question
+They are places where the Business Context Framework may enable a better experience than today's fragmented model.
 
-Can the model distinguish a customer, their accounts and legitimate relationships without treating every matching record as the same thing?
+## Candidate 1 — Customer account / duplicate context
 
-### Pressure-test
+### Opportunity
 
-The model should make visible:
+Use richer customer + relationship + service context to improve how staff identify and handle possible duplicate accounts.
 
-- customer versus account;
-- statutory versus non-statutory context where relevant;
-- potential versus confirmed duplicate;
-- relationship to Service Offerings;
-- trusted versus uncertain attributes;
-- who can verify or act;
-- consequences of an incorrect merge or assumption.
+### Experience hypothesis
 
-### What this tests
+> Staff given clearer contextual relationships and trust signals will make safer, faster account decisions than staff relying primarily on record-by-record comparison.
 
-Customer Context + Service Context + trust/stewardship.
+### Possible comparison
+
+Current handling versus a prototype context view or decision aid.
 
 ---
 
-## Test 2 — Parking Service Offering ↔ Knowledge
+## Candidate 2 — Parking Service Offering ↔ Knowledge
 
-### Question
+### Opportunity
 
-Can the model show which knowledge supports which Service Offerings and reveal reuse, gaps or unclear ownership?
+Connect Service Offering context with the reusable rules, requirements and guidance that support it.
 
-### Pressure-test
+### Experience hypothesis
 
-The model should make visible:
+> Staff or customers presented with information organised around the Service Offering and situation will find the right answer with less searching and interpretation than through the current knowledge structure.
 
-- Service Offering;
-- linked knowledge/guidance;
-- knowledge shared across multiple services;
-- missing knowledge relationships;
-- owner of business meaning;
-- source versus representation;
-- lifecycle/review requirements.
+### Possible comparison
 
-### What this tests
-
-Service Context + Information Context.
+Current Salesforce Knowledge / guidance journey versus a context-driven prototype.
 
 ---
 
-## Test 3 — Operational change outside CRM
+## Candidate 3 — Operational change
 
-### Question
+### Opportunity
 
-Can the model represent a customer-relevant change that originates in another area and connect it to the right service and interaction context?
+Connect an operational event outside CRM to the affected Service Offering, information and customer interaction.
 
-### Pressure-test
+### Experience hypothesis
 
-The model should make visible:
+> If the relevant operational context can be recognised and connected earlier, CX can provide a more timely and consistent response than when awareness depends on manual notification.
 
-- operational event/change;
-- affected Service Offering;
-- relevant rule, status or guidance;
-- customers/interactions potentially affected;
-- how CX becomes aware;
-- who owns the meaning;
-- which channels or representations need updating;
-- what happens when the change expires or is resolved.
+### Possible comparison
 
-### What this tests
+Current manual notification pathway versus a context-driven alert, prompt or prototype experience.
 
-Operational Context + Information Context + Interaction Context.
+## Selection rule
 
-## Test rule
+Choose the first delivery opportunity based on:
 
-If the model cannot explain a scenario simply, refine the model.
+- meaningful customer or staff friction;
+- ability to create a bounded comparison;
+- access to enough context to prototype;
+- measurable outcome;
+- low enough risk to test safely.
 
-Do not add a new object or layer unless a real scenario requires it.
+Do not choose an opportunity merely because the technology is easy.
