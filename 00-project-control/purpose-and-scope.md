@@ -1,364 +1,140 @@
 # Purpose and scope
 
-Status: Aligned draft  
-Owner: José Andrade  
-Current stage: Discover → Define  
-Last updated: 4 October 2026
+**Status:** 1D + 2D complete enough for progression; 3D active  
+**Owner:** José Andrade  
+**Current stage:** 3D — Business Context Architecture  
+**Last updated:** 6 October 2026
 
 ## Purpose
 
-Customer Account Management is a transformation workstream focused on improving how customer accounts and customer information support reliable, connected and lower-effort customer interactions.
+This repository preserves the original Customer Account Management discovery and definition work and now carries the active **Business Context Architecture** through 3D Design and 4D Deliver.
 
-The workstream provides a structured way to:
+The 4D approach remains:
 
-- understand current account-management problems;
-- connect customer, employee, operational and system evidence;
-- align stakeholders around a shared problem definition;
-- identify transformation opportunities;
-- design and test future approaches;
-- document decisions and their rationale;
-- evaluate whether changes improve outcomes; and
-- retain reusable learning for future iterations.
+1. **Discover** — establish current-state learning and context;
+2. **Define** — frame the problem and How Might We;
+3. **Design** — answer the problem through the Business Context Architecture;
+4. **Deliver** — ship and test the smallest useful version of the model.
 
-The repository supports decision-making and transformation activity.
+## Why the scope evolved
 
-It is not an operational system of record, customer-data repository, approved policy library or replacement for organisational delivery tools.
+Customer Account Management revealed that improving customer records alone would not solve the broader experience problem.
 
-## Strategic direction — first proving ground
+The work depends on understanding relationships between:
 
-Following the 30 September 2026 discussion, Customer Account Management should be treated as the **first proving ground for a business-led Customer Data Architecture**.
+- customers and accounts;
+- services and Service Offerings;
+- service rules, requirements and knowledge;
+- operational events and changes;
+- Interaction Modes and channels;
+- observable outcomes.
 
-This changes the strategic emphasis without changing the evidence discipline of the workstream.
+Information Management current-state work revealed a complementary problem: customer-relevant service information is fragmented across CRM, knowledge, operational systems and organisational boundaries, and CX often depends on manual notification and interpretation when something changes.
 
-The work is not only about improving the quality of records already held in CRM. It should help define and test what customer context the business actually needs in order to deliver more connected, lower-effort experiences across services.
+From 3D onward, Customer Account Management and Information Management are therefore treated as **two design lenses inside one Business Context Architecture**, not as separate projects.
 
-Use this workstream to explore, in a bounded and explainable way:
+## 1D + 2D boundary
 
-- what constitutes useful and sufficiently trusted customer context;
-- how account records relate to the wider customer relationship;
-- which legitimate account distinctions must be preserved;
-- where fragmented information creates customer or staff effort;
-- what stewardship questions belong with CX / business owners;
-- what authorised system changes remain with source-system administrators;
-- what review and verification loops are needed; and
-- what evidence would justify broader architecture or technology investment.
+### Customer Account Management
 
-Customer Account Management is **not** the complete Customer Data Architecture.
+The completed-enough discovery and definition work provides evidence and framing around:
 
-It is the first practical test through which the wider architecture can be shaped from real business problems.
+- customer identity and account context;
+- duplicate and inconsistent records;
+- legitimate account and relationship distinctions;
+- data-quality signals and verification;
+- stewardship and decision rights;
+- manual correction and exception handling;
+- trusted customer context.
 
-The current direction does not assume:
+### Information Management
 
-- automatic merges;
-- unrestricted writeback;
-- a comprehensive unified customer profile;
-- a new master customer identifier;
-- a particular customer-data platform; or
-- Salesforce Data 360 or another technology as the predetermined answer.
+The Information Management problem frame is maintained in:
 
-Technology choices should follow validated business requirements and demonstrated value.
+`jose-andr-cx-projects/cx-current-state-sop-mapping/02-customer-focus-information-support/problem-framing.md`
 
-## Initial objective
+It contributes evidence and framing around:
 
-The initial objective is to establish a practical 4D Human-Centred Design structure for the workstream:
+- the internally focused Contact Centre knowledge model;
+- Salesforce Knowledge as a representation of that operating model;
+- fragmented service and knowledge relationships inside CRM;
+- customer-relevant operational information outside CRM;
+- manual awareness and notification dependencies;
+- service information ownership, lifecycle and reuse.
 
-1. Discover
-2. Define
-3. Design
-4. Deliver
+## 3D scope — Business Context Architecture
 
-The structure will be used to document existing activity, preserve evidence, identify gaps and support iterative transformational change.
+3D asks:
 
-The immediate focus is to:
+> **What business context is needed to understand the customer, the service and the situation well enough to support the right interaction?**
 
-- record the discovery work already completed;
-- distinguish aligned outputs from unvalidated ambition;
-- preserve the aligned draft problem definition;
-- connect the work to current-state operational evidence;
-- identify missing discovery and definition activity; and
-- create a traceable basis for future design and delivery decisions.
+The working context layers are:
 
-## Current position
+- Customer Context;
+- Service Context;
+- Information Context;
+- Operational Context;
+- Interaction Context;
+- Outcome Context.
 
-The original discovery activity included broad ambitions covering:
+The work should make relationships visible without assuming a specific enterprise technology solution.
 
-- problem alignment;
-- customer use cases and pain points;
-- employee use cases and pain points;
-- current-state account-management practices;
-- organisational and system context;
-- business impacts;
-- good-practice research;
-- success measures;
-- future outcomes; and
-- a roadmap for improvement.
+## 4D scope — first shipping
 
-Not all intended discovery outcomes were completed.
+4D will test the combined model through bounded scenarios:
 
-The most dependable output currently available is an aligned draft problem definition developed between:
+1. customer account / duplicate context;
+2. Parking Service Offering ↔ Knowledge context;
+3. operational-change context where relevant information originates outside CRM.
 
-- the Customer Focus and Strategy Manager;
-- the CRM Product Owner; and
-- the Customer Data and Systems Support Officer.
-
-Other workshop outputs, proposed solutions, success measures and future-state ideas remain discovery evidence, assumptions or future signals until separately validated.
-
-## Working problem area
-
-The current problem area includes evidence that:
-
-- customer records may be duplicated or inconsistent;
-- staff may not be able to confidently identify the correct customer record;
-- the current account model may not reflect the full customer relationship;
-- fragmented customer information can increase manual effort;
-- customers may need to repeat information;
-- inconsistent account practices can affect service confidence;
-- ownership and governance responsibilities may be unclear; and
-- transformation initiatives may be constrained by weak customer-information foundations.
-
-These are working problem signals.
-
-They must not be treated as confirmed organisation-wide findings unless supported by evidence and appropriate validation.
+The aim is to test whether the model improves understanding and decision quality before expanding it.
 
 ## In scope
 
-The initial workstream includes:
-
-### Customer account experience
-
-- account creation;
-- customer identification;
-- account access;
-- contact-detail maintenance;
-- duplicate-account prevention and resolution;
-- customer relationship representation;
-- account-linked service interactions;
-- account continuity across services; and
-- customer trust in account information.
-
-### Employee experience
-
-- finding and identifying customer records;
-- assessing record reliability;
-- updating customer information;
-- resolving duplicate or inconsistent records;
-- understanding account ownership;
-- managing exceptions and workarounds;
-- supporting customer enquiries; and
-- using account information during service delivery.
-
-### Operational practices
-
-- current customer-account processes;
-- account lifecycle events;
-- account-quality routines;
-- manual correction and cleansing activity;
-- ownership and escalation pathways;
-- business rules;
-- exception handling;
-- controls;
-- handovers; and
-- recurring operational pain points.
-
-### Systems and information
-
-- CRM customer-account structures;
-- customer identifiers;
-- systems that create or update customer information;
-- system dependencies;
-- integration-related account issues;
-- customer-data quality rules;
-- relevant field definitions;
-- account classification;
-- relationship models; and
-- minimum information required for connected interactions.
-
-### Governance and transformation
-
-- roles and responsibilities;
-- decision rights;
-- ownership models;
-- account-management standards;
-- privacy, records, security and data-governance dependencies;
-- future operating-model options;
-- transformation priorities;
-- success measures;
-- pilots and experiments; and
-- evaluation and learning.
+- business concepts and relationships;
+- customer/account context;
+- service and Service Offering context;
+- knowledge and business rules;
+- operational events and changes;
+- interaction context;
+- trust and stewardship;
+- ownership and lifecycle;
+- bounded design tests;
+- learning and decisions from those tests.
 
 ## Out of scope
 
-The initial workstream does not include:
+- storing raw customer data in GitHub;
+- replacing organisational systems of record;
+- full enterprise data architecture;
+- selecting a technology platform before business requirements are validated;
+- automatic account merging;
+- a comprehensive unified customer profile;
+- exhaustive completion of every current-state SOP;
+- approved organisation-wide policy or governance.
 
-- storing raw customer or account data in GitHub;
-- replacing CRM, Databricks, Power BI, SharePoint, Jira or other organisational systems of record;
-- redesigning every customer-facing service;
-- defining a complete enterprise customer-data strategy;
-- selecting or procuring technology without validated requirements;
-- creating organisation-wide policy without authorised governance;
-- assuming a master customer identifier is the required solution;
-- treating proposed governance arrangements as approved;
-- documenting identifiable customer cases;
-- duplicating current-state SOP documentation; or
-- committing to implementation before the problem, scope and evidence are sufficiently defined.
+## Source boundary
 
-## Adjacent areas
+Current-state operational evidence remains in the relevant source repositories and organisational systems.
 
-The following areas are related but broader than the initial Customer Account Management scope:
+In particular:
 
-- customer data management across known and anonymous interactions;
-- customer analytics and segmentation;
-- personalisation;
-- channel strategy;
-- connected customer interactions;
-- service information architecture;
-- knowledge management;
-- digital identity;
-- master data management;
-- enterprise data governance;
-- consent and preference management;
-- customer communications; and
-- artificial intelligence using customer information.
-
-These areas may become dependencies, evidence sources or future transformation streams.
-
-They should not be absorbed into this repository unless repeated work demonstrates a genuine need.
-
-## Relationship to current-state SOP mapping
-
-The repository:
-
-`jose-andr/cx-current-state-sop-mapping`
-
-is an input to this workstream.
-
-It documents actual current Customer Data and Systems Support operational practices, including:
-
-- duplicate management;
-- record correction;
-- systems and tools;
-- operational decisions;
-- exception pathways;
-- manual workarounds;
-- pain points; and
-- current controls.
-
-This repository must reference that evidence rather than reproduce it.
-
-### Repository boundary
-
-| Repository | Purpose |
+| Source | Role |
 |---|---|
-| `cx-current-state-sop-mapping` | Document actual current operational practice |
-| `customer-account-management` | Use evidence to frame, design, test and evaluate transformational change |
+| `cx-current-state-sop-mapping` | Current-state operational evidence and Information Management problem framing |
+| `customer-account-management` | Customer Account Management 1D+2D history and active 3D+4D Business Context Architecture |
+| organisational systems | Authoritative operational records and controlled source material |
 
-## Intended outcomes
+This repository should reference evidence rather than duplicate controlled organisational content.
 
-The workstream aims to support:
+## Evidence discipline
 
-### Customer outcomes
+Keep separate:
 
-- less repetition;
-- clearer account interactions;
-- more reliable customer information;
-- fewer avoidable account problems;
-- improved continuity across services; and
-- increased confidence that customer information is handled appropriately.
+**evidence → assumption → interpretation → proposed architecture → validated decision**
 
-### Employee outcomes
-
-- greater confidence in customer records;
-- reduced manual reconciliation;
-- clearer ownership and escalation;
-- fewer recurring workarounds;
-- more consistent account-management practices; and
-- better support for resolving customer needs.
-
-### Operational outcomes
-
-- reduced duplicate creation;
-- improved account quality;
-- clearer account lifecycle practices;
-- more consistent data capture and update rules;
-- visible ownership and controls;
-- improved root-cause analysis; and
-- stronger readiness for connected interactions.
-
-### Organisational outcomes
-
-- better evidence for investment and prioritisation;
-- reduced transformation risk;
-- clearer decision-making;
-- reusable account-management standards;
-- stronger customer-information foundations; and
-- improved alignment between customer experience, CRM, data and service delivery.
-
-## Success conditions
-
-The workstream will be considered ready to move from Define into Design when:
-
-- the problem statement has been reviewed and validated at the required level;
-- customer and employee impacts are supported by sufficient evidence;
-- current-state operational evidence has been synthesised;
-- scope and exclusions are clear;
-- key assumptions are visible;
-- ownership and stakeholder roles are understood;
-- outcome measures are defined safely;
-- priority opportunities are agreed; and
-- the next design decisions are explicit.
-
-## Evidence and status rules
-
-Repository content must distinguish:
-
-- Evidence
-- Reported practice
-- Validated practice
-- Assumption
-- Interpretation
-- Future signal
-- Recommendation
-- Decision
-- Action
-- Outcome
-
-An aligned draft is suitable for continued work.
-
-It is not the same as formal endorsement, approved policy or validated organisation-wide evidence.
-
-## Privacy and information boundaries
-
-Do not store:
-
-- customer names;
-- contact details;
-- account identifiers;
-- identifiable case information;
-- raw CRM exports;
-- raw organisational datasets;
-- credentials;
-- sensitive screenshots; or
-- controlled operational records.
-
-Store only:
-
-- de-identified summaries;
-- synthetic examples;
-- aggregated findings;
-- source references;
-- field and system names where safe;
-- process descriptions;
-- caveats;
-- decisions;
-- reusable patterns; and
-- transformation learning.
+The Business Context Architecture is a working model until tested and validated through real use.
 
 ## Next action
 
-Record the aligned draft problem statement and separate:
-
-- validated wording;
-- supporting evidence;
-- assumptions;
-- unresolved scope questions; and
-- proposed solutions that must remain outside the problem definition.
+Develop Business Context Architecture v0.1 and test it against the three initial 4D scenarios.
