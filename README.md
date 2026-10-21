@@ -1,6 +1,6 @@
 # Business Context Architecture — Develop + Deliver
 
-**Status:** Active  
+**Status:** Active concept — 3D operating approach pending leadership decision  
 **4D stage:** 3D Develop + 4D Deliver  
 **Owner:** José Andrade
 
@@ -12,7 +12,7 @@ Discover + Define has already given us enough evidence to move forward. The upst
 
 `jose-andr-cx-projects/customer-accounts-and-information-management-discover-define`
 
-We are not waiting for organisation-wide agreement on the future model before designing it.
+The working hypothesis is that the framework can be proposed and tested without waiting for organisation-wide consensus. **That does not authorise the proposed war-room implementation.** Leadership feedback has been recorded and the commencement approach is awaiting a decision.
 
 The approach is:
 
@@ -22,7 +22,7 @@ The approach is:
 
 The previous pattern would be to keep discovering, socialising and seeking broader agreement before defining the model.
 
-This project takes a more direct approach:
+The proposed design direction takes a more direct approach:
 
 ```text
 WHAT WE ALREADY KNOW
@@ -54,7 +54,7 @@ It needs to be coherent enough to generate better experience hypotheses and open
 
 ## 3D — Develop
 
-3D is a **top-down framework-building exercise**.
+The proposed 3D approach is a **top-down framework-building exercise**. Whether this is run as a protected war-room, in a modified engagement model, or later remains open.
 
 A small selected group brings together CX, service, data, digital and operational expertise to define the business context good service needs.
 
@@ -148,4 +148,4 @@ references/
 
 ## Current next step
 
-Convene the first war-room working session, refine the Starting Framework, then select the first candidate in the experiment register to move into a real-world test.
+**Decision required — do not convene the war-room yet.** Review Dennis's feedback and resolve whether to proceed with, modify or defer the proposed 3D operating approach. Confirm decision authority, who contributes and validates, capacity, and the smallest bounded deliverable before scheduling a session or selecting a live test. See [BCA-DEC-008](03-decisions/decision-log.md#bca-dec-008--decide-how-to-implement-3d-develop-after-denniss-feedback).
