@@ -128,7 +128,7 @@ At the next leadership discussion, record **proceed / revise / defer**, the auth
 |---|---|
 | War-room go / revise / defer, decision authority and stakeholder approach | Before any 3D session or implementation commitment; BCA-DEC-008 |
 | Core war-room membership | Only after operating approach has been approved |
-| Business Context Framework v0.1 content | First war-room cycle |
+| Business Context Framework v0.1 content | First approved 3D design cycle, whether war-room or revised approach |
 | First delivery opportunity | Once v0.1 can generate a credible experience hypothesis |
 | Evidence threshold for promoting a pattern | After first experiment |
 | Where technology enablement is required | When a validated experience hypothesis cannot be tested without it |
