@@ -1,5 +1,7 @@
 # 3D War-Room Operating Model
 
+**Status: Proposed operating model — not authorised to commence.** The design intent below is retained for consideration; implementation is gated by [BCA-DEC-008](../03-decisions/decision-log.md#bca-dec-008--decide-how-to-implement-3d-develop-after-denniss-feedback).
+
 ## Purpose
 
 The war-room is a **protected expert design space** for developing the Business Context Framework quickly and coherently.
@@ -100,3 +102,11 @@ The war-room should produce only:
 - questions that genuinely block testing.
 
 Avoid producing large consultation packs or exhaustive future-state documentation before evidence requires it.
+
+## Leadership feedback and commencement gate (recorded 22 October 2026)
+
+Dennis supported the broader customer-experience and business-context shift while drawing attention to the missing platform-to-customer orchestration capability, the importance of involving the right people, the risk of capacity being absorbed by historic operational fixes, and the need to align decisions with business planning. In related CAM feedback, he favoured bringing relevant stakeholders along rather than presenting a finished answer.
+
+These points **challenge the implementation arrangement, not necessarily the design hypothesis**. A protected synthesis environment must not be mistaken for freedom from appropriate consultation, ownership or leadership decision-making. The exact participation, review checkpoints and scope remain unresolved.
+
+**Do not initiate the war-room from this document.** Dennis / relevant leadership must first decide to proceed, revise or defer; record the decision, decision authority, membership principles and initial bounded outcome in [BCA-DEC-008](../03-decisions/decision-log.md#bca-dec-008--decide-how-to-implement-3d-develop-after-denniss-feedback). The operating cadence above is a proposal, not a committed schedule.
